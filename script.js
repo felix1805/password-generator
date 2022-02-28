@@ -7,8 +7,8 @@ function generatePassword() {
     alert("You are not within range, enter at least 8 characters to continue.");
     return "";
   }
-  var lowercaseletters = "abcdefghijklmnopqrstuvwxyz";
-  var uppercaseletters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowercaseletters = "abcdefghijklmnopqrstuvwxyzäöü";
+  var uppercaseletters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ";
   var numbers = "12345678901234567890";
   var specialchar = "!@#$%^&*()_+=-{}|\\][\":';<>?/.,"; //all special case letters applicable for standard keyboard note special case for " and /. 
   
@@ -16,7 +16,6 @@ function generatePassword() {
   if (confirm("Would you like your password to contain Upper case letters?")) {
     pool += uppercaseletters;
   }
-  console.log(numbers);
   if (confirm("Would you like your password to contain numbers?")) {
     pool += numbers;
   }
@@ -25,6 +24,7 @@ function generatePassword() {
   }
   
   var genPassword = "";
+  console.log(specialchar);
   for (var i = 0; i < count; i++) {
     var random = Math.floor(Math.random() * pool.length);
     genPassword += pool[random];
