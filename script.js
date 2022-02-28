@@ -1,8 +1,8 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-  var count = Number(prompt("Please enter the amount of characters you would like in your password."));
-
+  var count = Number(prompt("Please enter the number of characters you would like in your password."));
+  
   if (count < 8 || count > 128) { //specified parameters for number of used characters
     alert("You are not within range, enter at least 8 characters to continue.");
     return "";
@@ -16,11 +16,12 @@ function generatePassword() {
   if (confirm("Would you like your password to contain Upper case letters?")) {
     pool += uppercaseletters;
   }
+  console.log(numbers);
   if (confirm("Would you like your password to contain numbers?")) {
     pool += numbers;
   }
   if (confirm("Would you like your password to contain special characters?")) {
-    pool += specialchar;
+    pool += specialchar;//completed pool of all possible cases.
   }
   
   var genPassword = "";
@@ -36,9 +37,9 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
-
+  
 }
 
 // Add event listener to generate button
