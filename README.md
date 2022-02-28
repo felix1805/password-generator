@@ -78,7 +78,7 @@ This homework is graded based on the following criteria:
 
 * Repository contains multiple descriptive commit messages.
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
+* Repository contains quality readme file with description, screenshot, and link to deployed application. // make sure to change readme
 
 ## Review
 
