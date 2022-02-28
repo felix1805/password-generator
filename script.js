@@ -5,7 +5,7 @@ function generatePassword() {
 
   if (count < 8 || count > 128) { //specified parameters for number of used characters
     alert("You are not within range, enter at least 8 characters to continue.");
-    return "";
+    
   }
   var lowercaseletters = "abcdefghijklmnopqrstuvwxyz";
   var uppercaseletters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
