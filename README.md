@@ -4,6 +4,10 @@
 
 This is a tool that can be used to generate a password from 8 to 128 characters in length. It can be adjusted to allow a user to specify the use of upper and lower case characters, along with special characters and numbers. The user is guided through this process in an easy to follow step-by-step process that finishes by generating a unique password with every use. 
 
+## TECHNOLOGY
+
+This password generator was developed using a javascript file that dynamically creates a password for the end user. It uses a series of "If" statements to generate the final password. 
+
 ### CODE EXAMPLE
 
 ![CODE EXAMPLE](assets/code_snippet.JPG)
